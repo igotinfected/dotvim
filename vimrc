@@ -11,4 +11,4 @@ set showmatch
 set incsearch
 set hlsearch
 filetype plugin indent on
-colorscheme dracula
+
