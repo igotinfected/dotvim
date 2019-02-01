@@ -45,3 +45,6 @@ let g:lightline = {
 
 " ycm
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+
+" dash
+let g:dash_activate = 0
