@@ -1,7 +1,7 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-set tabstop=8
+set tabstop=4
 set softtabstop=0
 set expandtab
 set shiftwidth=4
@@ -31,6 +31,7 @@ let g:syntastic_cpp_checkers = ['cppcheck'] " sudo apt-get install cppcheck
 let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues'] " OmniSharp thing, see https://github.com/OmniSharp/omnisharp-vim#example-vimrc
 let g:syntastic_javascript_checkers = ['eslint'] " To use es6 with React and the linter, do: https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
 let g:syntastic_json_checkers = ['eslint'] " ?? This not working, why???
+let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python3_checkers = ['flake8']
 let g:syntastic_haskell_checkers = ['hlint'] " sudo apt-get install hlint
 
