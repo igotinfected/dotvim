@@ -1,7 +1,7 @@
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = https://github.com/dracula/vim.git
-[submodule "bundle/fugitive"]
+[submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = http://github.com/tpope/vim-fugitive.git
 [submodule "bundle/lightline.vim"]
