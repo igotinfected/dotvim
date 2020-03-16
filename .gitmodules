@@ -16,3 +16,6 @@
 [submodule "bundle/black"]
 	path = bundle/black
 	url = https://github.com/igotinfected/black
+[submodule "bundle/dracula"]
+	path = bundle/dracula
+	url = https://github.com/dracula/vim.git

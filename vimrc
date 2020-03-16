@@ -1,5 +1,6 @@
 execute pathogen#infect()
 syntax on
+colorscheme dracula
 filetype plugin indent on
 set tabstop=4
 set softtabstop=0
@@ -32,13 +33,13 @@ let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues'] " OmniSharp thing
 let g:syntastic_javascript_checkers = ['eslint'] " To use es6 with React and the linter, do: https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
 let g:syntastic_json_checkers = ['eslint'] " ?? This not working, why???
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python3_checkers = ['flake8']
+let g:syntastic_python3_checkers = ['pylint']
 let g:syntastic_haskell_checkers = ['hlint'] " sudo apt-get install hlint
 
 " inline
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'dracula',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -50,4 +51,9 @@ let g:lightline = {
 
 " python
 let g:pymode_python = 'python3'
+
+" tmux enablke true color
+if exists('+termguicolors')
+  set termguicolors
+endif
 
